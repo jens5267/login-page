@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form class="box" action="index.html" method="post">
+        <h1>Login</h1>
+        <div class="input-container">
+            <input type="text" id="username" name="" placeholder="Username">
+        </div>
+        <div class="input-container">
+            <input type="password" id="password" name="" placeholder="Password">
+            <input type="checkbox" onclick="togglePassword()">Show Password
+        </div>
+        <input type="submit" name="" value="Submit">
+    </form>
+
+    <script>
+        function togglePassword() {
+        var pwd = document.getElementById("password");
+        (pwd.type == 'password') ? pwd.type = 'text' : pwd.type = 'password'
+        } 
+    </script>
+
+</body>
+</html>
